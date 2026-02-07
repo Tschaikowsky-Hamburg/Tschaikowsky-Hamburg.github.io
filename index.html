@@ -3,127 +3,311 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Rachmaninov Wettbewerb in Hamburg – Musikwettbewerb</title>
-  <meta name="description" content="Rachmaninov Wettbewerb in Hamburg – Musikwettbewerb für junge Talente. Anmeldung, Kategorien, Termine und Kontakt.">
+  <title>Rachmaninov Wettbewerb Hamburg – Musikwettbewerb für junge Talente</title>
+  <meta name="description" content="Offizielle Webseite des Rachmaninov Wettbewerbs in Hamburg. Musikwettbewerb für Klavier, Streicher und Gesang an der Akademie Hamburg.">
+  
+  <!-- Google Fonts für ein klassisches Design -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
-    :root { --bg:#ffffff; --fg:#1f2937; --mut:#6b7280; --acc:#2563eb; --card:#f8fafc; --line:#e5e7eb; }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
-    header{padding:48px 16px;border-bottom:1px solid var(--line);text-align:center}
-    h1{margin:0 0 6px;font-size:2rem}
-    .lead{margin:0;color:var(--mut)}
-    nav{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:14px}
-    nav a{color:var(--acc);text-decoration:none;padding:6px 10px;border-radius:8px}
-    nav a:hover{background:var(--card)}
-    main{max-width:900px;margin:0 auto;padding:24px 16px}
-    section{margin:28px 0;padding:16px;border:1px solid var(--line);border-radius:14px;background:#fff}
-    h2{margin:0 0 8px;font-size:1.25rem}
-    ul{margin:8px 0 0 20px}
-    .grid{display:grid;gap:12px}
-    @media(min-width:720px){.grid-2{grid-template-columns:1fr 1fr}}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--acc);color:#fff;text-decoration:none}
-    .mut{color:var(--mut)}
-    footer{padding:24px 16px;text-align:center;color:var(--mut);border-top:1px solid var(--line);font-size:.92rem}
+    :root { 
+      --bg: #ffffff; 
+      --fg: #1a1a1a; 
+      --mut: #555555; 
+      --acc: #8e1b1b; /* Klassisches Dunkelrot */
+      --gold: #c5a059; /* Gold-Akzent */
+      --card: #fdfcfb; 
+      --line: #e5e7eb; 
+    }
+    
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    
+    body { 
+      margin: 0; 
+      font-family: 'Source Sans Pro', sans-serif; 
+      background: var(--bg); 
+      color: var(--fg); 
+      line-height: 1.7; 
+    }
+
+    h1, h2, h3 { 
+      font-family: 'Playfair Display', serif; 
+      margin: 0 0 1rem; 
+      color: var(--fg);
+    }
+
+    /* Header & Navigation */
+    header { 
+      padding: 60px 20px; 
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=1200&q=80'); /* Platzhalter Klavierbild */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+    }
+    
+    header h1 { color: white; font-size: 2.8rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+    .lead { font-size: 1.2rem; max-width: 700px; margin: 0 auto 20px; opacity: 0.9; }
+
+    nav { 
+      background: white; 
+      padding: 10px; 
+      position: sticky; 
+      top: 0; 
+      z-index: 100; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    nav a { 
+      color: var(--fg); 
+      text-decoration: none; 
+      padding: 8px 15px; 
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover { color: var(--acc); }
+
+    /* Main Content */
+    main { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+    
+    section { 
+      margin-bottom: 60px; 
+      padding: 30px; 
+      background: var(--card); 
+      border-radius: 4px; 
+      border-top: 3px solid var(--gold);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }
+
+    h2 { 
+      font-size: 2rem; 
+      border-bottom: 1px solid var(--gold); 
+      display: inline-block; 
+      margin-bottom: 1.5rem;
+      padding-bottom: 5px;
+    }
+
+    .grid { display: grid; gap: 30px; }
+    @media(min-width: 768px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+
+    /* Buttons & Links */
+    .btn { 
+      display: inline-block; 
+      padding: 12px 25px; 
+      background: var(--acc); 
+      color: white; 
+      text-decoration: none; 
+      border-radius: 2px; 
+      font-weight: bold;
+      transition: background 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover { background: #6b1414; }
+
+    .contact-box {
+      background: #f0f4f8;
+      padding: 20px;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+
+    /* Form Styles */
+    .form-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; font-weight: 600; }
+    input, select, textarea { 
+      width: 100%; 
+      padding: 10px; 
+      border: 1px solid var(--line); 
+      border-radius: 4px;
+      font-family: inherit;
+    }
+
+    footer { 
+      background: #1a1a1a; 
+      color: #999; 
+      padding: 40px 20px; 
+      text-align: center; 
+      font-size: 0.9rem; 
+    }
+    footer a { color: var(--gold); text-decoration: none; margin: 0 10px; }
+
+    .highlight { color: var(--acc); font-weight: bold; }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Rachmaninov Wettbewerb in Hamburg</h1>
-    <p class="lead">Musikwettbewerb für junge Talente – Solo & Kammermusik</p>
-    <nav aria-label="Hauptnavigation">
-      <a href="#ueber">Über</a>
-      <a href="#kategorien">Kategorien</a>
-      <a href="#zeitplan">Zeitplan</a>
-      <a href="#anmeldung">Anmeldung</a>
-      <a href="#jury">Jury</a>
-      <a href="#regeln">Teilnahme</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
+    <h1>Rachmaninov Wettbewerb</h1>
+    <p class="lead">Internationaler Musikwettbewerb für junge Talente in Hamburg</p>
+    <p>Klavier · Streichinstrumente · Gesang · Kammermusik</p>
   </header>
+
+  <nav aria-label="Hauptnavigation">
+    <a href="#ueber">Über</a>
+    <a href="#kategorien">Kategorien</a>
+    <a href="#zeitplan">Zeitplan</a>
+    <a href="#anmeldung">Anmeldung</a>
+    <a href="#jury">Jury</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
 
   <main>
     <section id="ueber">
       <h2>Über den Wettbewerb</h2>
-      <p>Der <strong>Rachmaninov Wettbewerb in Hamburg</strong> fördert junge Musikerinnen und Musiker durch faire Wertung, konstruktives Feedback und Konzertmöglichkeiten. Austragungsort ist <em>Akademie Hamburg für Musik& Kultur, Petersweg 2, 21075 Hamburg</em>. Eingeladen sind Teilnehmende aller Nationalitäten.</p>
-      <p class="mut">Termin: <strong>Samstag, 30.05.2026</strong> · Austragung: <strong>Präsenz</strong></p>
+      <p>Der <strong>Rachmaninov Wettbewerb in Hamburg</strong> bietet jungen Musikerinnen und Musikern eine Bühne, um ihr Können vor einer Fachjury zu präsentieren. Wir legen Wert auf eine fördernde Atmosphäre, konstruktives Feedback und die Entdeckung neuer Talente.</p>
+      <div class="contact-box">
+        <p><strong>Austragungsort:</strong> Akademie Hamburg für Musik & Kultur<br>
+        Petersweg 2, 21075 Hamburg</p>
+        <p class="highlight">Termin: Samstag, 30. Mai 2026</p>
+      </div>
     </section>
 
     <section id="kategorien">
       <h2>Kategorien & Altersklassen</h2>
       <div class="grid grid-2">
         <div>
-          <h3 style="margin:0 0 6px">Instrumente</h3>
+          <h3>Instrumente</h3>
           <ul>
-            <li>Klavier (Solo)</li>
-            <li>Streichinstrumente (Violine, Viola, Cello)</li>
-            <li>Pop und Gesang (Klassik)</li>
-            <li>Kammermusik (Duo–Quartett)</li>
+            <li><strong>Klavier</strong> (Solo)</li>
+            <li><strong>Streichinstrumente</strong> (Violine, Viola, Cello)</li>
+            <li><strong>Gesang</strong> (Klassik & Pop)</li>
+            <li><strong>Kammermusik</strong> (Duo bis Quartett)</li>
           </ul>
         </div>
         <div>
-          <h3 style="margin:0 0 6px">Altersklassen</h3>
+          <h3>Altersklassen</h3>
           <ul>
-            <li>A: bis 8 Jahre</li>
-            <li>B: 9–10 Jahre</li>
-            <li>C: 11–12 Jahre</li>
-            <li>D: 13–15 Jahre</li>
-            <li>E: ab 16 Jahre</li>
+            <li><strong>A:</strong> bis 8 Jahre (max. 10 Min.)</li>
+            <li><strong>B:</strong> 9–10 Jahre (max. 10 Min.)</li>
+            <li><strong>C:</strong> 11–12 Jahre (max. 10 Min.)</li>
+            <li><strong>D:</strong> 13–15 Jahre (max. 15 Min.)</li>
+            <li><strong>E:</strong> ab 16 Jahre (max. 15 Min.)</li>
           </ul>
         </div>
       </div>
-      <p class="mut">Spieldauer: A-C max. 10 min · D-E max. 15 min.</p>
     </section>
 
     <section id="zeitplan">
-      <h2>Zeitplan</h2>
-      <ul>
-        <li><strong>bis 15.04.2026</strong> · Anmeldungsfrist</li>
-        <li><strong>30.05.2026</strong> · Hauptveranstaltung in Hamburg</li>
-      </ul>
+      <h2>Wichtige Termine</h2>
+      <div class="grid grid-2">
+        <div>
+          <h3 style="color: var(--acc)">Anmeldeschluss</h3>
+          <p><strong>15. April 2026</strong><br>Bitte reichen Sie alle Unterlagen rechtzeitig ein.</p>
+        </div>
+        <div>
+          <h3 style="color: var(--acc)">Wettbewerbstag</h3>
+          <p><strong>30. Mai 2026</strong><br>Vorspiele und Wertungen in Hamburg.</p>
+        </div>
+      </div>
     </section>
 
     <section id="anmeldung">
       <h2>Anmeldung</h2>
-      <p>Die Anmeldung erfolgt per E-Mail oder WhatsApp:</p>
-      <ul>
-        <li>per E-Mail: <a href="mailto:rostislav.golod@gmail.com?subject=Anmeldung%20%E2%80%93%20Rachmaninov%20Wettbewerb%20in%20Hamburg&body=Name:%0AInstrument/Kategorie:%0AAltersklasse%20(A/B/C/D/E):%0ATitel%20der%20Werke:%0ASonstiges:%0A">rostislav.golod@gmail.com</a></li>
-        <li>oder per WhatsApp an <em>0179 / 705 86 58</em></li>
-      </ul>
-      <p class="mut">Startgebühr: 40 € · IBAN: DE78 2005 0550 1382 4530 07 · Verwendungszweck: Rachmaninov Wettbewerb und Name des Teilnehmer</p>
+      <p>Sie können sich direkt hier über das Formular oder per E-Mail anmelden.</p>
+      
+      <form action="mailto:rostislav.golod@gmail.com" method="post" enctype="text/plain">
+        <div class="grid grid-2">
+          <div class="form-group">
+            <label>Name des Teilnehmers</label>
+            <input type="text" name="Name" required placeholder="Vor- und Nachname">
+          </div>
+          <div class="form-group">
+            <label>Geburtsdatum</label>
+            <input type="date" name="Geburtsdatum" required>
+          </div>
+        </div>
+        <div class="grid grid-2">
+          <div class="form-group">
+            <label>Instrument / Kategorie</label>
+            <select name="Kategorie">
+              <option>Klavier Solo</option>
+              <option>Violine</option>
+              <option>Cello</option>
+              <option>Gesang</option>
+              <option>Kammermusik</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Altersklasse</label>
+            <select name="Altersklasse">
+              <option>A (bis 8 J.)</option>
+              <option>B (9-10 J.)</option>
+              <option>C (11-12 J.)</option>
+              <option>D (13-15 J.)</option>
+              <option>E (ab 16 J.)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Programm (Werke & Komponisten)</label>
+          <textarea name="Programm" rows="4" placeholder="z.B. S. Rachmaninov: Prelude Op. 3 No. 2"></textarea>
+        </div>
+        <button type="submit" class="btn">Anmeldung absenden</button>
+      </form>
+
+      <div style="margin-top: 30px; font-size: 0.9rem; color: var(--mut);">
+        <p><strong>Teilnahmegebühr:</strong> 40 €<br>
+        <strong>IBAN:</strong> DE78 2005 0550 1382 4530 07<br>
+        <strong>Verwendungszweck:</strong> Rachmaninov Wettbewerb + Name des Teilnehmers</p>
+      </div>
     </section>
 
     <section id="jury">
-      <h2>Jury</h2>
-      <ul>
-        <li>Rostislav Golod - (Violine)</li>
-        <li>Irina Kolesnikova - (Klavier)</li>
-        <li>Lilia Suchova - (Klavier) </li>
-        <li>Eduard Mnatsakanov - (Chello) </li>
-      </ul>
-      <p class="mut">Die Jury vergibt Punktwertungen und schriftliches Feedback.</p>
-    </section>
-
-    <section id="regeln">
-      <h2>Teilnahmebedingungen</h2>
-      <ul>
-        <li>Programm frei wählbar; mindestens ein Werk aus Epoche …</li>
-        <li>Wiederholungen nach Juryhinweis kürzbar.</li>
-        <li>Begleitung: eigene Korrepetition möglich; vor Ort vermittelbar.</li>
-        <li>Audio/Video-Mitschnitte zu Dokumentationszwecken zulässig.</li>
-      </ul>
+      <h2>Die Fachjury</h2>
+      <p>Unsere Jury besteht aus erfahrenen Musikern und Pädagogen:</p>
+      <div class="grid grid-2">
+        <ul>
+          <li><strong>Rostislav Golod</strong> (Violine)</li>
+          <li><strong>Irina Kolesnikova</strong> (Klavier)</li>
+        </ul>
+        <ul>
+          <li><strong>Lilia Suchova</strong> (Klavier)</li>
+          <li><strong>Eduard Mnatsakanov</strong> (Cello)</li>
+        </ul>
+      </div>
     </section>
 
     <section id="kontakt">
-      <h2>Kontakt</h2>
-      <p>E-Mail: <a href="mailto:rostislav.golod@gmail.com">rostislav.golod@gmail.com</a></p>
-      <p>Telefon/WhatsApp: <em>0179 / 705 86 58</em></p>
-      <p>Veranstalter: <em>Rostislav Golod</em></p>
+      <h2>Kontakt & Impressum</h2>
+      <div class="grid grid-2">
+        <div>
+          <h3>Veranstalter</h3>
+          <p>Rostislav Golod<br>
+          Akademie Hamburg für Musik & Kultur<br>
+          Petersweg 2, 21075 Hamburg</p>
+        </div>
+        <div>
+          <h3>Direkter Kontakt</h3>
+          <p>E-Mail: <a href="mailto:rostislav.golod@gmail.com">rostislav.golod@gmail.com</a><br>
+          Tel/WhatsApp: 0179 / 705 86 58</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  
-    <footer>
-<p class="mut">© Rachmaninov Wettbewerb in Hamburg</p>
-    </footer>
+  <footer>
+    <p>&copy; 2026 Rachmaninov Wettbewerb Hamburg</p>
+    <p>
+      <a href="#ueber">Startseite</a> | 
+      <a href="#">Datenschutz</a> | 
+      <a href="#kontakt">Impressum</a>
+    </p>
+  </footer>
+
 </body>
 </html>
